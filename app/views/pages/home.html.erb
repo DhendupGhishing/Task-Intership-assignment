@@ -1,0 +1,13 @@
+<h1>Pages#home</h1>
+
+<div class='homepage-project'>
+<% @project.each do |project| %>
+    <p> <%= project.title %></p>
+    <p><%= project.description %></p>
+    <p><%= project.percent_complete %></p>
+    <hr>
+
+<% end %>
+</div>
+
+

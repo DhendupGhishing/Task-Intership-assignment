@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Taski</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+    <%= javascript_include_tag 'jquery' %>
+<%= javascript_include_tag 'rails-ujs' %>
+
+
+  </head>
+
+  <body>
+
+  <center><%= image_tag('logo/images.jpeg', height: 200, width: 800) %>
+  <br><br><br>
+
+ <%= render "share/nav" %>
+<%= render "share/alert" %>
+ </center>
+    <%= yield %>
+   
+  </body>
+</html>
